@@ -11,7 +11,8 @@
     <td class="list_description">
       <dl>
         <dt><%= product.name %></dt>
-        <dd><%= truncate(strip_tags(product.description),
+	<dd><%= product.user_id %></dd>        
+	<dd><%= truncate(strip_tags(product.description),
                length: 120) %></dd>
       </dl>
     </td>
