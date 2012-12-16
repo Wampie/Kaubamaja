@@ -1,3 +1,8 @@
+
+<% if session[:user_id] %>
+<h2> logged in as <%= session[:user_id] %></h2>
+<% end %>
+
 <h1>Listing products</h1>
 
 <table>

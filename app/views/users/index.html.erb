@@ -9,7 +9,8 @@
 
     <td class="list_description">
       <dl>
-        <dt><%= user.user_id %></dt>        
+        <dt><%= user.user_id %></dt>  
+		<dd><%= user.password_digest %></dd> 
 		<dd><%= truncate(strip_tags(user.description),
                length: 120) %></dd>
       </dl>
